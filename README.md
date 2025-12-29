@@ -1,24 +1,33 @@
 # igdarya.com
+
 Website for Personal Brand
 
 ## Stack
-This web using: 
-- HTML 
+
+This web using:
+
+- HTML
 - CSS (Tailwind)
 - Javascript
 
 ## Inspiration
-- https://brittanychiang.com/
-- https://bappasahabapi.vercel.app/
+
+- [Brittany Chiang](https://brittanychiang.com/)
+- [Bappa Saha](https://bappasahabapi.vercel.app/)
 
 ## Figma
+
 Not yet, coming soon
 
 ## Demo
-https://www.igdarya.com (soon but still for another web)
+
+[igdarya.com](https://www.igdarya.com/)  
+_(Coming soon – this domain still used for another project)_
 
 ## Features
+
 Goals wannabe:
+
 - Fully Responsive
 - Mobile Navigations
 - Animated elements on scroll
@@ -27,6 +36,6 @@ Goals wannabe:
 - soon, and more
 
 ## Credit
-- [https://fonts.google.com](https://tailwindcss.com/)
-- soon, etc
 
+- [Tailwind CSS](https://tailwindcss.com/)
+- soon, etc
