@@ -38,7 +38,32 @@
   <body
     class="min-h-screen flex flex-col bg-lightBase text-slate-800 dark:bg-base dark:text-slate-200 transition-colors duration-300 antialiased"
   >
-    <aside class="hidden md:block w-64 bg-lightSurface dark:bg-surface"></aside>
+    <aside
+      id="sidebar"
+      class="fixed md:static top-0 left-0 h-screen w-64 bg-lightSurface dark:bg-surface border-r border-slate-200 dark:border-slate-800"
+    >
+      <div class="flex flex-col items-center py-8 h-full">
+        <div class="w-24 h-24 rounded-full border-4 border-brand mb-4">
+          <img
+            src="https://media.licdn.com/dms/image/v2/D5603AQG5HEBrjc-vkg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1692656478721"
+            class="w-full h-full rounded-full object-cover"
+          />
+        </div>
+
+        <h1 class="font-bold text-lg">Gede Arya</h1>
+        <p class="text-sm text-slate-500 dark:text-slate-400 mb-8">
+          Web Developer
+        </p>
+
+        <nav class="flex flex-col gap-4 text-sm text-center">
+          <a href="./hero.html" class="nav-link hover:text-brand">HOME</a>
+          <a href="./skill.html" class="nav-link hover:text-brand">SKILL</a>
+          <a href="./work.html" class="nav-link hover:text-brand">WORK</a>
+          <a href="./about.html" class="nav-link hover:text-brand">ABOUT</a>
+          <a href="./contact.html" class="nav-link hover:text-brand">CONTACT</a>
+        </nav>
+      </div>
+    </aside>
     <main class="flex-1 min-h-screen"></main>
   </body>
 </html>
