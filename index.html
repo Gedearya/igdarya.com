@@ -39,12 +39,19 @@
     class="min-h-screen flex flex-col bg-lightBase text-slate-800 dark:bg-base dark:text-slate-200 transition-colors duration-300 antialiased"
   >
     <header
-      class="md:hidden fixed top-0 left-0 w-full h-16 bg-lightSurface dark:bg-surface border-b flex items-center justify-between px-4 z-50"
+      class="md:hidden fixed top-0 left-0 w-full h-16 bg-lightSurface dark:bg-surface border-b border-slate-200 dark:border-slate-800 flex items-center justify-between px-4 z-50"
     >
-      <button id="hamburger" class="text-2xl">☰</button>
-      <span class="font-bold">Gede Arya</span>
+      <div class="flex items-center gap-4">
+        <button id="hamburger" class="text-2xl">☰</button>
+        <span class="font-bold">Gede Arya</span>
+      </div>
 
-      <button id="themeToggleMobile">🌙</button>
+      <button
+        id="themeToggleMobile"
+        class="text-sm px-3 py-1 rounded-lg border border-slate-300 dark:border-slate-600"
+      >
+        🌙
+      </button>
     </header>
 
     <div id="overlay" class="fixed inset-0 bg-black/60 hidden z-40"></div>
@@ -76,5 +83,25 @@
       </div>
     </aside>
     <main class="flex-1 min-h-screen"></main>
+    <script>
+      const sidebar = document.getElementById("sidebar");
+      const overlay = document.getElementById("overlay");
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      function openSidebar() {
+        sidebar.classList.remove("-translate-x-full");
+        overlay.classList.remove("hidden");
+      }
+
+      function closeSidebar() {
+        sidebar.classList.add("-translate-x-full");
+        overlay.classList.add("hidden");
+      }
+
+      hamburger?.addEventListener("click", openSidebar);
+      overlay?.addEventListener("click", closeSidebar);
+      navLinks.forEach((link) => link.addEventListener("click", closeSidebar));
+    </script>
   </body>
 </html>
