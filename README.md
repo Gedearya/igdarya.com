@@ -30,9 +30,7 @@ Goals wannabe:
 
 - Fully Responsive
 - Mobile Navigations
-- Animated elements on scroll
-- Smooth scrolling in each section.
-- Sticky Navigation on scrolling
+- Dark and Light Mode
 - soon, and more
 
 ## Credit
