@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gede Arya | Personal Website</title>
+    <script>
+      (function () {
+        const theme = localStorage.getItem("theme");
+        if (
+          theme === "dark" ||
+          (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -24,5 +35,7 @@
       };
     </script>
   </head>
-  <body></body>
+  <body
+    class="min-h-screen bg-lightBase text-slate-800 dark:bg-base dark:text-slate-200 transition-colors duration-300"
+  ></body>
 </html>
