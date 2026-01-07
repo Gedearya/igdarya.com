@@ -1,39 +1,37 @@
 # igdarya.com
 
-Website for Personal Brand
+Website for Personal Brand I Gede Arya Danny Pratama
 
-## Stack
+## Screenshot
+
+![Landing Page](./images/landing-page.jpg)
+
+## Link
+
+[igdarya.com](https://www.igdarya.com/)
+
+## Stacks
 
 This web using:
 
 - HTML
-- CSS (Tailwind)
-- Javascript
+- CSS
+- [Tailwind CSS](https://tailwindcss.com/)
+- JavaScript
 
-## Inspiration
+## Inspirations
 
 - [Brittany Chiang](https://brittanychiang.com/)
 - [Bappa Saha](https://bappasahabapi.vercel.app/)
 
 ## Figma
 
-Not yet, coming soon
-
-## Demo
-
-[igdarya.com](https://www.igdarya.com/)  
-_(Coming soon – this domain still used for another project)_
+[Link to Figma](https://www.figma.com/design/yPCFu9laz6Wgb7v4YNsgno/igdarya.com)
 
 ## Features
 
-Goals wannabe:
+Goals:
 
 - Fully Responsive
 - Mobile Navigations
 - Dark and Light Mode
-- soon, and more
-
-## Credit
-
-- [Tailwind CSS](https://tailwindcss.com/)
-- soon, etc
