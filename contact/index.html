@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gede Arya | Personal Website</title>
+
     <script>
       (function () {
         const theme = localStorage.getItem("theme");
@@ -15,6 +16,7 @@
         }
       })();
     </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -35,9 +37,11 @@
       };
     </script>
   </head>
+
   <body
     class="min-h-screen flex flex-col bg-lightBase text-slate-800 dark:bg-base dark:text-slate-200 transition-colors duration-300 antialiased"
   >
+    <!-- MOBILE TOPBAR -->
     <header
       class="md:hidden fixed top-0 left-0 w-full h-16 bg-lightSurface dark:bg-surface border-b border-slate-200 dark:border-slate-800 flex items-center justify-between px-4 z-50"
     >
@@ -46,6 +50,7 @@
         <span class="font-bold">Gede Arya</span>
       </div>
 
+      <!-- TOGGLE BUTTON MOBILE -->
       <button
         id="themeToggleMobile"
         class="text-sm px-3 py-1 rounded-lg border border-slate-300 dark:border-slate-600"
@@ -54,8 +59,10 @@
       </button>
     </header>
 
+    <!-- OVERLAY -->
     <div id="overlay" class="fixed inset-0 bg-black/60 hidden z-40"></div>
 
+    <!-- SIDEBAR -->
     <aside
       id="sidebar"
       class="fixed shadow-md top-0 left-0 h-screen w-64 bg-lightSurface dark:bg-surface border-r border-slate-200 dark:border-slate-800 transform -translate-x-full md:translate-x-0 transition-transform duration-300 z-50"
@@ -100,12 +107,13 @@
             >ABOUT</a
           >
           <a
-            href="/ontact"
+            href="/contact"
             class="nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
             >CONTACT</a
           >
         </nav>
 
+        <!-- TOGGLE BUTTON DESKTOP -->
         <button
           id="themeToggle"
           class="hidden md:flex mt-6 px-4 py-2 text-sm rounded-lg border border-slate-300 dark:border-slate-600 items-center justify-center gap-2"
@@ -114,6 +122,7 @@
         </button>
 
         <div class="mt-auto flex gap-5 text-xl">
+          <!-- WhatsApp -->
           <a
             href="https://wa.me/628XXXXXXXXXX"
             target="_blank"
@@ -132,6 +141,7 @@
             </svg>
           </a>
 
+          <!-- LinkedIn -->
           <a
             href="https://www.linkedin.com/in/i-gede-arya-danny-pratama-21116110a/"
             target="_blank"
@@ -150,6 +160,7 @@
             </svg>
           </a>
 
+          <!-- GitHub -->
           <a
             href="https://github.com/Gedearya"
             target="_blank"
@@ -171,38 +182,36 @@
       </div>
     </aside>
 
+    <!-- CONTENT -->
     <main class="md:ml-64 pt-16 md:pt-0 flex-grow flex flex-col">
-      <!-- HERO -->
+      <!-- CONTACT -->
       <section
-        id="home"
-        class="flex-grow px-6 md:px-12 lg:px-20 py-24 flex items-center"
+        id="contact"
+        class="flex-grow px-6 md:px-12 py-24 bg-lighBase dark:bg-base text-center"
       >
-        <div>
-          <h1 class="text-4xl md:text-6xl font-bold leading-tight">
-            Hello,<br />
-            My Name is <span class="text-brandDark dark:text-brand">Arya</span
-            ><br />
-            I'm a Web Developer
-          </h1>
-          <p class="mt-4 text-slate-500 dark:text-slate-400">
-            Lived in Jakarta, Indonesia
-          </p>
+        <h2 class="text-3xl font-bold mb-4">Interested in working together?</h2>
+        <p class="text-slate-500 dark:text-slate-400 mb-6">
+          Email me: igd.ad.pratama@gmail.com
+        </p>
 
-          <div class="mt-6 flex flex-wrap gap-4">
-            <a
-              class="px-6 py-3 rounded-lg font-medium bg-brandDark text-white hover:bg-brand hover:text-slate-900 transition-colors"
-            >
-              Download My CV
-            </a>
-
-            <a
-              href="#work"
-              class="px-6 py-3 rounded-lg font-medium border border-brandDark text-brandDark hover:bg-brandDark/10 dark:border-brand dark:text-brand dark:hover:bg-brand/20 transition-colors"
-            >
-              Explore My Work
-            </a>
-          </div>
-        </div>
+        <form class="max-w-xl mx-auto space-y-4">
+          <input
+            class="w-full p-3 rounded bg-lightSurface dark:bg-surface border border-slate-300/50"
+            placeholder="Your Name"
+          />
+          <input
+            class="w-full p-3 rounded bg-lightSurface dark:bg-surface border border-slate-300/50"
+            placeholder="Your Email"
+          />
+          <textarea
+            class="w-full p-3 rounded bg-lightSurface dark:bg-surface border border-slate-300/50"
+            rows="4"
+            placeholder="Message"
+          ></textarea>
+          <button class="w-full py-3 bg-brand text-slate-900 rounded-lg">
+            Contact Me
+          </button>
+        </form>
       </section>
 
       <footer
@@ -232,27 +241,57 @@
       overlay?.addEventListener("click", closeSidebar);
       navLinks.forEach((link) => link.addEventListener("click", closeSidebar));
 
+      function updateThemeLabel() {
+        const isDark = document.documentElement.classList.contains("dark");
+
+        if (isDark) {
+          themeToggle.innerText = "☀️ Light Mode";
+          themeToggleMobile.innerText = "☀️";
+        } else {
+          themeToggle.innerText = "🌙 Dark Mode";
+          themeToggleMobile.innerText = "🌙";
+        }
+      }
+
+      // THEME TOGGLE
       const html = document.documentElement;
       const themeToggle = document.getElementById("themeToggle");
       const themeToggleMobile = document.getElementById("themeToggleMobile");
 
-      function updateThemeLabel() {
-        const isDark = html.classList.contains("dark");
-        themeToggle.innerText = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
-        themeToggleMobile.innerText = isDark ? "☀️" : "🌙";
-      }
+      updateThemeLabel();
 
       function setTheme(isDark) {
-        html.classList.toggle("dark", isDark);
-        localStorage.setItem("theme", isDark ? "dark" : "light");
+        if (isDark) {
+          html.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+        } else {
+          html.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+        }
+
         updateThemeLabel();
       }
 
-      updateThemeLabel();
+      // INIT
+      themeToggle.addEventListener("click", () =>
+        setTheme(!html.classList.contains("dark"))
+      );
+      themeToggleMobile.addEventListener("click", () =>
+        setTheme(!html.classList.contains("dark"))
+      );
 
-      themeToggle.onclick = () => setTheme(!html.classList.contains("dark"));
-      themeToggleMobile.onclick = () =>
-        setTheme(!html.classList.contains("dark"));
+      // ACTIVE
+      const currentPath =
+        window.location.pathname.split("/").pop() || "hero.html";
+
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        const linkPath = link.getAttribute("href").replace("./", "");
+
+        if (linkPath === currentPath) {
+          link.classList.remove("text-slate-400");
+          link.classList.add("text-brand", "font-semibold");
+        }
+      });
     </script>
   </body>
 </html>

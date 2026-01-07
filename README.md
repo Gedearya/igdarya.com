@@ -32,6 +32,7 @@ This web using:
 
 Goals:
 
+- Dark and Light Mode
 - Fully Responsive
 - Mobile Navigations
 - Dark and Light Mode

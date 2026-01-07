@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gede Arya | Personal Website</title>
+
     <script>
       (function () {
         const theme = localStorage.getItem("theme");
@@ -15,6 +16,7 @@
         }
       })();
     </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -35,9 +37,11 @@
       };
     </script>
   </head>
+
   <body
     class="min-h-screen flex flex-col bg-lightBase text-slate-800 dark:bg-base dark:text-slate-200 transition-colors duration-300 antialiased"
   >
+    <!-- MOBILE TOPBAR -->
     <header
       class="md:hidden fixed top-0 left-0 w-full h-16 bg-lightSurface dark:bg-surface border-b border-slate-200 dark:border-slate-800 flex items-center justify-between px-4 z-50"
     >
@@ -46,6 +50,7 @@
         <span class="font-bold">Gede Arya</span>
       </div>
 
+      <!-- TOGGLE BUTTON MOBILE -->
       <button
         id="themeToggleMobile"
         class="text-sm px-3 py-1 rounded-lg border border-slate-300 dark:border-slate-600"
@@ -54,8 +59,10 @@
       </button>
     </header>
 
+    <!-- OVERLAY -->
     <div id="overlay" class="fixed inset-0 bg-black/60 hidden z-40"></div>
 
+    <!-- SIDEBAR -->
     <aside
       id="sidebar"
       class="fixed shadow-md top-0 left-0 h-screen w-64 bg-lightSurface dark:bg-surface border-r border-slate-200 dark:border-slate-800 transform -translate-x-full md:translate-x-0 transition-transform duration-300 z-50"
@@ -78,34 +85,35 @@
 
         <nav class="flex flex-col gap-4 text-sm text-center">
           <a
-            href="/"
+            href="./hero.html"
             class="nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
           >
             HOME
           </a>
 
           <a
-            href="/skill"
+            href="skill.html"
             class="nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
             >SKILL</a
           >
           <a
-            href="/work"
+            href="./work.html"
             class="nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
             >WORK</a
           >
           <a
-            href="/about"
+            href="./about.html"
             class="nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
             >ABOUT</a
           >
           <a
-            href="/ontact"
+            href="./contact.html"
             class="nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
             >CONTACT</a
           >
         </nav>
 
+        <!-- TOGGLE BUTTON DESKTOP -->
         <button
           id="themeToggle"
           class="hidden md:flex mt-6 px-4 py-2 text-sm rounded-lg border border-slate-300 dark:border-slate-600 items-center justify-center gap-2"
@@ -114,6 +122,7 @@
         </button>
 
         <div class="mt-auto flex gap-5 text-xl">
+          <!-- WhatsApp -->
           <a
             href="https://wa.me/628XXXXXXXXXX"
             target="_blank"
@@ -132,6 +141,7 @@
             </svg>
           </a>
 
+          <!-- LinkedIn -->
           <a
             href="https://www.linkedin.com/in/i-gede-arya-danny-pratama-21116110a/"
             target="_blank"
@@ -150,6 +160,7 @@
             </svg>
           </a>
 
+          <!-- GitHub -->
           <a
             href="https://github.com/Gedearya"
             target="_blank"
@@ -171,6 +182,7 @@
       </div>
     </aside>
 
+    <!-- CONTENT -->
     <main class="md:ml-64 pt-16 md:pt-0 flex-grow flex flex-col">
       <!-- HERO -->
       <section
@@ -232,27 +244,57 @@
       overlay?.addEventListener("click", closeSidebar);
       navLinks.forEach((link) => link.addEventListener("click", closeSidebar));
 
+      function updateThemeLabel() {
+        const isDark = document.documentElement.classList.contains("dark");
+
+        if (isDark) {
+          themeToggle.innerText = "☀️ Light Mode";
+          themeToggleMobile.innerText = "☀️";
+        } else {
+          themeToggle.innerText = "🌙 Dark Mode";
+          themeToggleMobile.innerText = "🌙";
+        }
+      }
+
+      // THEME TOGGLE
       const html = document.documentElement;
       const themeToggle = document.getElementById("themeToggle");
       const themeToggleMobile = document.getElementById("themeToggleMobile");
 
-      function updateThemeLabel() {
-        const isDark = html.classList.contains("dark");
-        themeToggle.innerText = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
-        themeToggleMobile.innerText = isDark ? "☀️" : "🌙";
-      }
+      updateThemeLabel();
 
       function setTheme(isDark) {
-        html.classList.toggle("dark", isDark);
-        localStorage.setItem("theme", isDark ? "dark" : "light");
+        if (isDark) {
+          html.classList.add("dark");
+          localStorage.setItem("theme", "dark");
+        } else {
+          html.classList.remove("dark");
+          localStorage.setItem("theme", "light");
+        }
+
         updateThemeLabel();
       }
 
-      updateThemeLabel();
+      // INIT
+      themeToggle.addEventListener("click", () =>
+        setTheme(!html.classList.contains("dark"))
+      );
+      themeToggleMobile.addEventListener("click", () =>
+        setTheme(!html.classList.contains("dark"))
+      );
 
-      themeToggle.onclick = () => setTheme(!html.classList.contains("dark"));
-      themeToggleMobile.onclick = () =>
-        setTheme(!html.classList.contains("dark"));
+      // ACTIVE
+      const currentPath =
+        window.location.pathname.split("/").pop() || "hero.html";
+
+      document.querySelectorAll(".nav-link").forEach((link) => {
+        const linkPath = link.getAttribute("href").replace("./", "");
+
+        if (linkPath === currentPath) {
+          link.classList.remove("text-slate-400");
+          link.classList.add("text-brand", "font-semibold");
+        }
+      });
     </script>
   </body>
 </html>
