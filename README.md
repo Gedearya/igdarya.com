@@ -6,7 +6,7 @@ This website is my personal branding space and online portfolio, built to showca
 
 ## Preview
 
-![Landing Page](./images/landing-page.jpg)
+![Landing Page](./assets/screenshot/landing-page.jpg)
 
 ## Live Website
 
