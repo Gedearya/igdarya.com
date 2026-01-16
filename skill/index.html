@@ -479,6 +479,28 @@
       themeToggle.onclick = () => setTheme(!html.classList.contains("dark"));
       themeToggleMobile.onclick = () =>
         setTheme(!html.classList.contains("dark"));
+
+      const currentPath = window.location.pathname;
+
+      navLinks.forEach((link) => {
+        const linkPath = new URL(link.href).pathname;
+
+        if (linkPath === "/" && currentPath === "/") {
+          setActive(link);
+        }
+
+        if (linkPath !== "/" && currentPath.startsWith(linkPath)) {
+          setActive(link);
+        }
+      });
+
+      function setActive(link) {
+        link.classList.add(
+          "text-brandDark",
+          "font-semibold",
+          "dark:text-brand"
+        );
+      }
     </script>
   </body>
 </html>
