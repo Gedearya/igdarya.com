@@ -48,11 +48,11 @@ function setTheme(isDark) {
 updateThemeLabel();
 
 themeToggle?.addEventListener("click", () =>
-  setTheme(!html.classList.contains("dark"))
+  setTheme(!html.classList.contains("dark")),
 );
 
 themeToggleMobile?.addEventListener("click", () =>
-  setTheme(!html.classList.contains("dark"))
+  setTheme(!html.classList.contains("dark")),
 );
 
 // =======================
@@ -75,3 +75,23 @@ navLinks.forEach((link) => {
 function setActive(link) {
   link.classList.add("text-brandDark", "font-semibold", "dark:text-brand");
 }
+
+// =======================
+// TypeIt Animation
+// =======================
+document.addEventListener("DOMContentLoaded", function () {
+  new TypeIt("#element", { speed: 75 })
+
+    .pause(300)
+    .move(-9)
+    .delete()
+    .type("Backend ")
+    .pause(300)
+    .delete()
+    .type("Full Stack ")
+    .pause(100)
+    .delete()
+    .type("Web ")
+    .move(9)
+    .go();
+});
