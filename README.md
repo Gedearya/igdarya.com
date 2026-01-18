@@ -6,7 +6,11 @@ This website is my personal branding space and online portfolio, built to showca
 
 ## Preview
 
-![Landing Page](./assets/screenshots/landing-page.jpg)
+🌙 Landing Page Dark Mode
+![Landing Page Dark Mode](./assets/screenshots/landing-page-dark-mode.png)
+
+☀️ Landing Page Light Mode
+![Landing Page Light Mode](./assets/screenshots/landing-page-light-mode.png)
 
 ## Live Website
 
@@ -19,8 +23,10 @@ This website is built using a lightweight and performant stack:
 
 - **HTML** – semantic and accessible structure
 - **CSS** – custom styling
-- **Tailwind CSS** – utility-first styling for rapid and consistent UI development
+- **Tailwind CSS** – utility for rapid and consistent UI styling development
 - **JavaScript** – interactivity and theme handling
+- **AOS** – animate on scroll library
+- **TypeIt** – versatile typing utility
 
 ## Features
 
