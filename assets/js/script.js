@@ -95,3 +95,12 @@ document.addEventListener("DOMContentLoaded", function () {
     .move(9)
     .go();
 });
+
+// =======================
+// Refresh Scroll on Top Position
+// =======================
+window.history.scrollRestoration = "manual";
+
+window.addEventListener("load", () => {
+  window.scrollTo(0, 0);
+});
