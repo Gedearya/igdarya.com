@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -45,7 +45,7 @@
       class="md:hidden fixed top-0 left-0 w-full h-16 bg-lightSurface dark:bg-surface border-b border-slate-200 dark:border-slate-800 flex items-center justify-between px-4 z-50"
     >
       <div class="flex items-center gap-4">
-        <button id="hamburger" class="text-2xl">☰</button>
+        <button id="mobile-menu" class="text-2xl">☰</button>
         <span class="font-bold">Gede Arya</span>
       </div>
 
@@ -68,7 +68,7 @@
           class="w-24 h-24 rounded-full border-4 border-brandDark dark:border-brand flex items-center justify-center mb-4"
         >
           <img
-            src="./assets/images/arya.jpeg"
+            src="/assets/images/arya.jpeg"
             alt="Gede Arya"
             class="w-full h-full object-cover rounded-full"
           />
@@ -82,24 +82,24 @@
         <nav class="flex flex-col gap-4 text-sm text-center my-auto">
           <a
             href="/"
-            class="nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
+            class="uppercase nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
           >
-            HOME
+            Home
           </a>
           <a
-            href="/skill"
+            href="/skills"
             class="nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
-            >SKILL</a
+            >Skills</a
           >
           <a
             href="/work"
             class="nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
-            >WORK</a
+            >Work</a
           >
           <a
             href="/about"
             class="nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
-            >ABOUT</a
+            >About</a
           >
           <a
             href="/contact"
@@ -122,16 +122,7 @@
             aria-label="WhatsApp"
             class="text-slate-600 dark:text-slate-400 hover:text-green-500 transition-colors"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="w-6 h-6"
-            >
-              <path
-                d="M12.04 2C6.55 2 2.07 6.48 2.07 11.97c0 1.94.51 3.83 1.48 5.49L2 22l4.69-1.52a9.94 9.94 0 005.35 1.57h.01c5.49 0 9.97-4.48 9.97-9.97C22.02 6.48 17.54 2 12.04 2zm0 18.06c-1.66 0-3.28-.45-4.7-1.31l-.34-.2-2.78.9.93-2.71-.22-.35a8.03 8.03 0 01-1.25-4.33c0-4.43 3.61-8.03 8.06-8.03 4.44 0 8.05 3.6 8.05 8.03 0 4.44-3.61 8.03-8.05 8.03zm4.42-5.95c-.24-.12-1.41-.7-1.63-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.02-.38-1.94-1.21-.72-.64-1.2-1.44-1.34-1.68-.14-.24-.02-.37.1-.49.1-.1.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.54-1.3-.74-1.78-.2-.48-.4-.42-.54-.43h-.46c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2 0 1.18.86 2.32.98 2.48.12.16 1.7 2.6 4.12 3.64.58.25 1.02.4 1.37.51.58.18 1.1.15 1.52.09.46-.07 1.41-.58 1.61-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"
-              />
-            </svg>
+            <img src="/assets/icons/whatsapp.svg" alt="WhatsApp" width="24" />
           </a>
 
           <a
@@ -144,7 +135,7 @@
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              fill="currentColor"
+              fill="#0077B5"
               class="w-6 h-6"
             >
               <path
@@ -189,9 +180,9 @@
             My Name is
             <span class="text-brandDark dark:text-brand">Arya</span><br />
             I'm a
-            <span class="text-brandDark dark:text-brand" id="element"
-              >Frontend Developer</span
-            >
+            <span class="text-brandDark dark:text-brand" id="element">
+              Frontend Developer
+            </span>
           </h1>
           <p
             class="mt-4 text-slate-500 dark:text-slate-400"
@@ -371,6 +362,7 @@
         Made with ❤️ by I Gede Arya Danny Pratama
       </footer>
     </main>
+
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
       AOS.init({
