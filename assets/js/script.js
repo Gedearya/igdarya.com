@@ -3,7 +3,7 @@
 // =======================
 const sidebar = document.getElementById("sidebar");
 const overlay = document.getElementById("overlay");
-const hamburger = document.getElementById("hamburger");
+const mobileNav = document.getElementById("mobile-navigation");
 const navLinks = document.querySelectorAll(".nav-link");
 
 function openSidebar() {
@@ -16,7 +16,7 @@ function closeSidebar() {
   overlay.classList.add("hidden");
 }
 
-hamburger?.addEventListener("click", openSidebar);
+mobileNav?.addEventListener("click", openSidebar);
 overlay?.addEventListener("click", closeSidebar);
 navLinks.forEach((link) => link.addEventListener("click", closeSidebar));
 
