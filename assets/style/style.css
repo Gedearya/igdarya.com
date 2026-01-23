@@ -168,6 +168,34 @@ html:not(.dark) .theme-toggle {
   color: #0f172a;
 }
 
+.socials {
+  display: flex;
+  gap: 20px;
+}
+
+.social-link {
+  color: #94a3b8;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+}
+
+.social-link.whatsapp:hover {
+  color: #25d366;
+}
+
+.social-link.linkedin:hover {
+  color: #0a66c2;
+}
+
+.social-link.github:hover {
+  color: #ffffff;
+}
+
 main {
   margin-left: 208px;
   padding: 96px 48px;
