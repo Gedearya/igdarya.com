@@ -196,6 +196,16 @@ html:not(.dark) .theme-toggle {
   color: #ffffff;
 }
 
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
 main {
   margin-left: 208px;
   padding: 96px 48px;
@@ -280,7 +290,7 @@ footer {
   padding-left: 48px;
   font-size: 14px;
   color: #94a3b8;
-  background: #f1f5f9;
+  background: #020617;
 }
 
 .dark footer {
