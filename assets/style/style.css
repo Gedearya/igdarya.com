@@ -262,20 +262,6 @@ main {
   padding: 20px;
 }
 
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 16px;
-}
-
-.tags span {
-  font-size: 12px;
-  padding: 4px 12px;
-  border-radius: 999px;
-  background: #e2e8f0;
-}
-
 .card-body a {
   color: #0891b2;
   font-weight: 500;
