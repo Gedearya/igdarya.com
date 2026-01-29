@@ -27,6 +27,7 @@ This website is built using a lightweight and performant stack:
 - **JavaScript** – interactivity and theme handling
 - **AOS** – animate on scroll library
 - **TypeIt** – versatile typing utility
+- **EmailJS** – client-side email service for handling contact form submissions
 
 ## Features
 
