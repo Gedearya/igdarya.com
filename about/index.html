@@ -24,12 +24,12 @@
           extend: {
             colors: {
               brand: "#22d3ee",
-              brandSoft: "#67e8f9",
-              brandDark: "#0891b2",
+              "brand-soft": "#67e8f9",
+              "brand-dark": "#0891b2",
               base: "#0f172a",
               surface: "#020617",
-              lightBase: "#ffffff",
-              lightSurface: "#f1f5f9",
+              "light-base": "#ffffff",
+              "light-surface": "#f1f5f9",
             },
           },
         },
@@ -39,10 +39,10 @@
   </head>
 
   <body
-    class="min-h-screen flex flex-col bg-lightBase text-slate-800 dark:bg-base dark:text-slate-200 transition-colors duration-300 antialiased"
+    class="min-h-screen flex flex-col bg-light-base text-slate-800 dark:bg-base dark:text-slate-200 transition-colors duration-300 antialiased"
   >
     <header
-      class="md:hidden fixed top-0 left-0 w-full h-16 bg-lightSurface dark:bg-surface border-b border-slate-200 dark:border-slate-800 flex items-center justify-between px-4 z-50"
+      class="md:hidden fixed top-0 left-0 w-full h-16 bg-light-surface dark:bg-surface border-b border-slate-200 dark:border-slate-800 flex items-center justify-between px-4 z-50"
     >
       <div class="flex items-center gap-4">
         <button id="mobile-navigation" class="text-2xl">☰</button>
@@ -61,11 +61,11 @@
 
     <aside
       id="sidebar"
-      class="fixed shadow-md top-0 left-0 h-screen w-52 bg-lightSurface dark:bg-surface border-r border-slate-200 dark:border-slate-800 transform -translate-x-full md:translate-x-0 transition-transform duration-300 z-50"
+      class="fixed shadow-md top-0 left-0 h-screen w-52 bg-light-surface dark:bg-surface border-r border-slate-200 dark:border-slate-800 transform -translate-x-full md:translate-x-0 transition-transform duration-300 z-50"
     >
       <div class="flex flex-col items-center py-8 h-full">
         <div
-          class="w-24 h-24 rounded-full border-4 border-brandDark dark:border-brand flex items-center justify-center mb-4"
+          class="w-24 h-24 rounded-full border-4 border-brand-dark dark:border-brand flex items-center justify-center mb-4"
         >
           <img
             src="/assets/images/arya.jpeg"
@@ -84,33 +84,33 @@
         <nav class="flex flex-col gap-4 text-sm text-center my-auto">
           <a
             href="/"
-            class="uppercase nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
+            class="uppercase nav-link hover:text-brand-dark dark:hover:text-brand transition-colors"
           >
             Home
           </a>
           <a
             href="/skills"
-            class="uppercase nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
+            class="uppercase nav-link hover:text-brand-dark dark:hover:text-brand transition-colors"
             >Skills</a
           >
           <a
             href="/works"
-            class="uppercase nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
+            class="uppercase nav-link hover:text-brand-dark dark:hover:text-brand transition-colors"
             >Works</a
           >
           <a
             href="/about"
-            class="uppercase nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
+            class="uppercase nav-link hover:text-brand-dark dark:hover:text-brand transition-colors"
             >About</a
           >
           <a
             href="/credentials"
-            class="uppercase nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
+            class="uppercase nav-link hover:text-brand-dark dark:hover:text-brand transition-colors"
             >Credentials</a
           >
           <a
             href="/contact"
-            class="uppercase nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
+            class="uppercase nav-link hover:text-brand-dark dark:hover:text-brand transition-colors"
             >Contact</a
           >
           <button
@@ -185,10 +185,10 @@
     <main class="md:ml-52 pt-16 md:pt-0 flex-grow flex flex-col">
       <section
         id="about"
-        class="flex-grow px-6 md:px-12 py-24 relative bg-lightBase dark:bg-base"
+        class="flex-grow px-6 md:px-12 py-24 relative bg-light-base dark:bg-base"
       >
         <div class="text-center mb-20" data-aos="fade-up">
-          <h3 class="uppercase text-brandDark dark:text-brand text-sm mb-2">
+          <h3 class="uppercase text-brand-dark dark:text-brand text-sm mb-2">
             About Me
           </h3>
           <h2 class="text-3xl md:text-4xl font-bold">My Journey So Far</h2>
@@ -210,7 +210,7 @@
               data-aos-delay="300"
             >
               <div
-                class="bg-lightSurface dark:bg-surface p-6 rounded-xl border border-slate-300/40 dark:border-slate-700/60 shadow-sm hover:shadow-lg transition"
+                class="bg-light-surface dark:bg-surface p-6 rounded-xl border border-slate-300/40 dark:border-slate-700/60 shadow-sm hover:shadow-lg transition"
               >
                 <div class="space-y-1">
                   <h4
@@ -223,7 +223,9 @@
                     PT. Bank Rakyat Indonesia Persero Tbk
                   </p>
 
-                  <p class="text-sm font-medium text-brandDark dark:text-brand">
+                  <p
+                    class="text-sm font-medium text-brand-dark dark:text-brand"
+                  >
                     2025 - Present
                   </p>
                 </div>
@@ -237,7 +239,7 @@
                 >
                   <li class="flex gap-3">
                     <span
-                      class="mt-2 h-1.5 w-1.5 rounded-full bg-brandDark dark:bg-brand"
+                      class="mt-2 h-1.5 w-1.5 rounded-full bg-brand-dark dark:bg-brand"
                     ></span>
                     <span>
                       Leading a cross-functional squad of frontend, backend, and
@@ -247,7 +249,7 @@
 
                   <li class="flex gap-3">
                     <span
-                      class="mt-2 h-1.5 w-1.5 rounded-full bg-brandDark dark:bg-brand"
+                      class="mt-2 h-1.5 w-1.5 rounded-full bg-brand-dark dark:bg-brand"
                     ></span>
                     <span>
                       Driving sprint planning, task prioritization, and delivery
@@ -257,7 +259,7 @@
 
                   <li class="flex gap-3">
                     <span
-                      class="mt-2 h-1.5 w-1.5 rounded-full bg-brandDark dark:bg-brand"
+                      class="mt-2 h-1.5 w-1.5 rounded-full bg-brand-dark dark:bg-brand"
                     ></span>
                     <span>
                       Mentoring team members and promoting continuous
@@ -269,7 +271,7 @@
             </div>
 
             <span
-              class="absolute left-1/2 top-8 w-4 h-4 bg-brandDark dark:bg-brand rounded-full -translate-x-1/2 hidden md:block"
+              class="absolute left-1/2 top-8 w-4 h-4 bg-brand-dark dark:bg-brand rounded-full -translate-x-1/2 hidden md:block"
             ></span>
           </div>
 
@@ -280,7 +282,7 @@
               data-aos-delay="300"
             >
               <div
-                class="bg-lightSurface dark:bg-surface p-6 rounded-xl border border-slate-300/40 dark:border-slate-700/60 shadow-sm hover:shadow-lg transition"
+                class="bg-light-surface dark:bg-surface p-6 rounded-xl border border-slate-300/40 dark:border-slate-700/60 shadow-sm hover:shadow-lg transition"
               >
                 <div class="space-y-1">
                   <h4
@@ -293,7 +295,9 @@
                     PT Santai Berkualitas Syberindo.
                   </p>
 
-                  <p class="text-sm font-medium text-brandDark dark:text-brand">
+                  <p
+                    class="text-sm font-medium text-brand-dark dark:text-brand"
+                  >
                     2023 - 2025
                   </p>
                 </div>
@@ -307,7 +311,7 @@
                 >
                   <li class="flex gap-3">
                     <span
-                      class="mt-2 h-1.5 w-1.5 rounded-full bg-brandDark dark:bg-brand"
+                      class="mt-2 h-1.5 w-1.5 rounded-full bg-brand-dark dark:bg-brand"
                     ></span>
                     <span>
                       Conducted monthly ReactJS training sessions for 20-30
@@ -317,7 +321,7 @@
 
                   <li class="flex gap-3">
                     <span
-                      class="mt-2 h-1.5 w-1.5 rounded-full bg-brandDark dark:bg-brand"
+                      class="mt-2 h-1.5 w-1.5 rounded-full bg-brand-dark dark:bg-brand"
                     ></span>
                     <span>
                       Delivered structured learning on Git, HTML, CSS,
@@ -327,7 +331,7 @@
 
                   <li class="flex gap-3">
                     <span
-                      class="mt-2 h-1.5 w-1.5 rounded-full bg-brandDark dark:bg-brand"
+                      class="mt-2 h-1.5 w-1.5 rounded-full bg-brand-dark dark:bg-brand"
                     ></span>
                     <span>
                       Mentored participants through hands-on projects, code
@@ -339,7 +343,7 @@
             </div>
 
             <span
-              class="absolute left-1/2 top-8 w-4 h-4 bg-brandDark dark:bg-brand rounded-full -translate-x-1/2 hidden md:block"
+              class="absolute left-1/2 top-8 w-4 h-4 bg-brand-dark dark:bg-brand rounded-full -translate-x-1/2 hidden md:block"
             ></span>
           </div>
 
@@ -350,7 +354,7 @@
               data-aos-delay="300"
             >
               <div
-                class="bg-lightSurface dark:bg-surface p-6 rounded-xl border border-slate-300/40 dark:border-slate-700/60 shadow-sm hover:shadow-lg transition"
+                class="bg-light-surface dark:bg-surface p-6 rounded-xl border border-slate-300/40 dark:border-slate-700/60 shadow-sm hover:shadow-lg transition"
               >
                 <div class="space-y-1">
                   <h4
@@ -361,7 +365,9 @@
 
                   <p class="text-sm text-slate-500">PT. Satkomindo Mediyasa.</p>
 
-                  <p class="text-sm font-medium text-brandDark dark:text-brand">
+                  <p
+                    class="text-sm font-medium text-brand-dark dark:text-brand"
+                  >
                     2023 - 2025
                   </p>
                 </div>
@@ -375,7 +381,7 @@
                 >
                   <li class="flex gap-3">
                     <span
-                      class="mt-2 h-1.5 w-1.5 rounded-full bg-brandDark dark:bg-brand"
+                      class="mt-2 h-1.5 w-1.5 rounded-full bg-brand-dark dark:bg-brand"
                     ></span>
                     <span>
                       Built responsive and scalable web applications using React
@@ -385,7 +391,7 @@
 
                   <li class="flex gap-3">
                     <span
-                      class="mt-2 h-1.5 w-1.5 rounded-full bg-brandDark dark:bg-brand"
+                      class="mt-2 h-1.5 w-1.5 rounded-full bg-brand-dark dark:bg-brand"
                     ></span>
                     <span>
                       Implemented reusable UI components and maintained
@@ -395,7 +401,7 @@
 
                   <li class="flex gap-3">
                     <span
-                      class="mt-2 h-1.5 w-1.5 rounded-full bg-brandDark dark:bg-brand"
+                      class="mt-2 h-1.5 w-1.5 rounded-full bg-brand-dark dark:bg-brand"
                     ></span>
                     <span>
                       Collaborated closely with backend teams to integrate APIs
@@ -405,7 +411,7 @@
 
                   <li class="flex gap-3">
                     <span
-                      class="mt-2 h-1.5 w-1.5 rounded-full bg-brandDark dark:bg-brand"
+                      class="mt-2 h-1.5 w-1.5 rounded-full bg-brand-dark dark:bg-brand"
                     ></span>
                     <span>
                       Optimized performance, accessibility, and cross-browser
@@ -417,14 +423,14 @@
             </div>
 
             <span
-              class="absolute left-1/2 top-8 w-4 h-4 bg-brandDark dark:bg-brand rounded-full -translate-x-1/2 hidden md:block"
+              class="absolute left-1/2 top-8 w-4 h-4 bg-brand-dark dark:bg-brand rounded-full -translate-x-1/2 hidden md:block"
             ></span>
           </div>
         </div>
       </section>
 
       <footer
-        class="bg-lightSurface dark:bg-surface px-6 md:px-12 py-6 border-t border-slate-200 dark:border-slate-800 text-sm text-slate-500 dark:text-slate-400"
+        class="bg-light-surface dark:bg-surface px-6 md:px-12 py-6 border-t border-slate-200 dark:border-slate-800 text-sm text-slate-500 dark:text-slate-400"
       >
         Made with ❤️ by I Gede Arya Danny Pratama
       </footer>

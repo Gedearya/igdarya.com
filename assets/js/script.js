@@ -73,7 +73,7 @@ navLinks.forEach((link) => {
 });
 
 function setActive(link) {
-  link.classList.add("text-brandDark", "font-semibold", "dark:text-brand");
+  link.classList.add("text-brand-dark", "font-semibold", "dark:text-brand");
 }
 
 // =======================

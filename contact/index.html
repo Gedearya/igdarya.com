@@ -24,12 +24,12 @@
           extend: {
             colors: {
               brand: "#22d3ee",
-              brandSoft: "#67e8f9",
-              brandDark: "#0891b2",
+              "brand-soft": "#67e8f9",
+              "brand-dark": "#0891b2",
               base: "#0f172a",
               surface: "#020617",
-              lightBase: "#ffffff",
-              lightSurface: "#f1f5f9",
+              "light-base": "#ffffff",
+              "light-surface": "#f1f5f9",
             },
           },
         },
@@ -39,10 +39,10 @@
   </head>
 
   <body
-    class="min-h-screen flex flex-col bg-lightBase text-slate-800 dark:bg-base dark:text-slate-200 transition-colors duration-300 antialiased"
+    class="min-h-screen flex flex-col bg-light-base text-slate-800 dark:bg-base dark:text-slate-200 transition-colors duration-300 antialiased"
   >
     <header
-      class="md:hidden fixed top-0 left-0 w-full h-16 bg-lightSurface dark:bg-surface border-b border-slate-200 dark:border-slate-800 flex items-center justify-between px-4 z-50"
+      class="md:hidden fixed top-0 left-0 w-full h-16 bg-light-surface dark:bg-surface border-b border-slate-200 dark:border-slate-800 flex items-center justify-between px-4 z-50"
     >
       <div class="flex items-center gap-4">
         <button id="mobile-navigation" class="text-2xl">☰</button>
@@ -61,11 +61,11 @@
 
     <aside
       id="sidebar"
-      class="fixed shadow-md top-0 left-0 h-screen w-52 bg-lightSurface dark:bg-surface border-r border-slate-200 dark:border-slate-800 transform -translate-x-full md:translate-x-0 transition-transform duration-300 z-50"
+      class="fixed shadow-md top-0 left-0 h-screen w-52 bg-light-surface dark:bg-surface border-r border-slate-200 dark:border-slate-800 transform -translate-x-full md:translate-x-0 transition-transform duration-300 z-50"
     >
       <div class="flex flex-col items-center py-8 h-full">
         <div
-          class="w-24 h-24 rounded-full border-4 border-brandDark dark:border-brand flex items-center justify-center mb-4"
+          class="w-24 h-24 rounded-full border-4 border-brand-dark dark:border-brand flex items-center justify-center mb-4"
         >
           <img
             src="/assets/images/arya.jpeg"
@@ -85,33 +85,33 @@
         <nav class="my-auto flex flex-col gap-4 text-sm text-center">
           <a
             href="/"
-            class="uppercase nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
+            class="uppercase nav-link hover:text-brand-dark dark:hover:text-brand transition-colors"
           >
             Home
           </a>
           <a
             href="/skills"
-            class="uppercase nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
+            class="uppercase nav-link hover:text-brand-dark dark:hover:text-brand transition-colors"
             >Skills</a
           >
           <a
             href="/works"
-            class="uppercase nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
+            class="uppercase nav-link hover:text-brand-dark dark:hover:text-brand transition-colors"
             >Works</a
           >
           <a
             href="/about"
-            class="uppercase nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
+            class="uppercase nav-link hover:text-brand-dark dark:hover:text-brand transition-colors"
             >About</a
           >
           <a
             href="/credentials"
-            class="uppercase nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
+            class="uppercase nav-link hover:text-brand-dark dark:hover:text-brand transition-colors"
             >Credentials</a
           >
           <a
             href="/contact"
-            class="uppercase nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
+            class="uppercase nav-link hover:text-brand-dark dark:hover:text-brand transition-colors"
             >Contact</a
           >
           <button
@@ -186,10 +186,10 @@
     <main class="md:ml-52 pt-16 md:pt-0 flex-grow flex flex-col">
       <section
         id="contact"
-        class="flex-grow px-6 md:px-12 py-24 bg-lightBase dark:bg-base text-center"
+        class="flex-grow px-6 md:px-12 py-24 bg-light-base dark:bg-base text-center"
       >
         <h3
-          class="uppercase text-brandDark dark:text-brand text-sm mb-2"
+          class="uppercase text-brand-dark dark:text-brand text-sm mb-2"
           data-aos="fade-up"
         >
           Contact Me
@@ -210,25 +210,25 @@
           <input
             type="text"
             name="from_name"
-            class="w-full p-3 rounded bg-lightSurface dark:bg-surface border border-slate-300/50"
+            class="w-full p-3 rounded bg-light-surface dark:bg-surface border border-slate-300/50"
             placeholder="Your Name"
           />
           <input
             type="email"
             name="from_email"
-            class="w-full p-3 rounded bg-lightSurface dark:bg-surface border border-slate-300/50"
+            class="w-full p-3 rounded bg-light-surface dark:bg-surface border border-slate-300/50"
             placeholder="Your Email"
           />
           <textarea
             name="message"
-            class="w-full p-3 rounded bg-lightSurface dark:bg-surface border border-slate-300/50"
+            class="w-full p-3 rounded bg-light-surface dark:bg-surface border border-slate-300/50"
             rows="4"
             placeholder="Message"
             required
           ></textarea>
           <button
             type="submit"
-            class="w-full px-6 py-3 rounded-lg font-medium bg-brandDark text-white hover:bg-brand hover:text-slate-900 transition-colors"
+            class="w-full px-6 py-3 rounded-lg font-medium bg-brand-dark text-white hover:bg-brand hover:text-slate-900 transition-colors"
           >
             Send Message
           </button>
@@ -236,7 +236,7 @@
       </section>
 
       <footer
-        class="bg-lightSurface dark:bg-surface px-6 md:px-12 py-6 border-t border-slate-200 dark:border-slate-800 text-sm text-slate-500 dark:text-slate-400"
+        class="bg-light-surface dark:bg-surface px-6 md:px-12 py-6 border-t border-slate-200 dark:border-slate-800 text-sm text-slate-500 dark:text-slate-400"
       >
         Made with ❤️ by I Gede Arya Danny Pratama
       </footer>
