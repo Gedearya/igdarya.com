@@ -24,12 +24,12 @@
           extend: {
             colors: {
               brand: "#22d3ee",
-              brandSoft: "#67e8f9",
-              brandDark: "#0891b2",
+              "brand-soft": "#67e8f9",
+              "brand-dark": "#0891b2",
               base: "#0f172a",
               surface: "#020617",
-              lightBase: "#ffffff",
-              lightSurface: "#f1f5f9",
+              "light-base": "#ffffff",
+              "light-surface": "#f1f5f9",
             },
           },
         },
@@ -39,10 +39,10 @@
   </head>
 
   <body
-    class="min-h-screen flex flex-col bg-lightBase text-slate-800 dark:bg-base dark:text-slate-200 transition-colors duration-300 antialiased"
+    class="min-h-screen flex flex-col bg-light-base text-slate-800 dark:bg-base dark:text-slate-200 transition-colors duration-300 antialiased"
   >
     <header
-      class="md:hidden fixed top-0 left-0 w-full h-16 bg-lightSurface dark:bg-surface border-b border-slate-200 dark:border-slate-800 flex items-center justify-between px-4 z-50"
+      class="md:hidden fixed top-0 left-0 w-full h-16 bg-light-surface dark:bg-surface border-b border-slate-200 dark:border-slate-800 flex items-center justify-between px-4 z-50"
     >
       <div class="flex items-center gap-4">
         <button id="mobile-navigation" class="text-2xl">☰</button>
@@ -61,11 +61,11 @@
 
     <aside
       id="sidebar"
-      class="fixed shadow-md top-0 left-0 h-screen w-52 bg-lightSurface dark:bg-surface border-r border-slate-200 dark:border-slate-800 transform -translate-x-full md:translate-x-0 transition-transform duration-300 z-50"
+      class="fixed shadow-md top-0 left-0 h-screen w-52 bg-light-surface dark:bg-surface border-r border-slate-200 dark:border-slate-800 transform -translate-x-full md:translate-x-0 transition-transform duration-300 z-50"
     >
       <div class="flex flex-col items-center py-8 h-full">
         <div
-          class="w-24 h-24 rounded-full border-4 border-brandDark dark:border-brand flex items-center justify-center mb-4"
+          class="w-24 h-24 rounded-full border-4 border-brand-dark dark:border-brand flex items-center justify-center mb-4"
         >
           <img
             src="/assets/images/arya.jpeg"
@@ -85,33 +85,33 @@
         <nav class="flex flex-col gap-4 text-sm text-center my-auto">
           <a
             href="/"
-            class="uppercase nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
+            class="uppercase nav-link hover:text-brand-dark dark:hover:text-brand transition-colors"
           >
             Home
           </a>
           <a
             href="/skills"
-            class="uppercase nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
+            class="uppercase nav-link hover:text-brand-dark dark:hover:text-brand transition-colors"
             >Skills</a
           >
           <a
             href="/works"
-            class="uppercase nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
+            class="uppercase nav-link hover:text-brand-dark dark:hover:text-brand transition-colors"
             >Works</a
           >
           <a
             href="/about"
-            class="uppercase nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
+            class="uppercase nav-link hover:text-brand-dark dark:hover:text-brand transition-colors"
             >About</a
           >
           <a
             href="/credentials"
-            class="uppercase nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
+            class="uppercase nav-link hover:text-brand-dark dark:hover:text-brand transition-colors"
             >Credentials</a
           >
           <a
             href="/contact"
-            class="uppercase nav-link hover:text-brandDark dark:hover:text-brand transition-colors"
+            class="uppercase nav-link hover:text-brand-dark dark:hover:text-brand transition-colors"
             >Contact</a
           >
           <button
@@ -186,11 +186,11 @@
     <main class="md:ml-52 pt-16 md:pt-0 flex-grow flex flex-col">
       <section
         id="skills"
-        class="flex-grow px-6 md:px-12 lg:px-20 py-24 bg-lightBase dark:bg-base"
+        class="flex-grow px-6 md:px-12 lg:px-20 py-24 bg-light-base dark:bg-base"
       >
         <div class="mb-8" data-aos="fade-up">
           <h3
-            class="uppercase text-xs font-semibold tracking-widest text-brandDark dark:text-brand mb-2"
+            class="uppercase text-xs font-semibold tracking-widest text-brand-dark dark:text-brand mb-2"
           >
             What I can do
           </h3>
@@ -215,56 +215,56 @@
           data-aos-delay="100"
         >
           <div
-            class="group bg-lightSurface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
+            class="group bg-light-surface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
           >
             <img
               src="/assets/icons/html.png"
               alt="HTML"
-              class="w-12 h-12 mx-auto"
+              class="w-12 h-12 mx-auto object-contain transition group-hover:scale-110"
             />
             <p class="mt-2 text-xs font-medium">HTML</p>
           </div>
 
           <div
-            class="group bg-lightSurface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
+            class="group bg-light-surface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
           >
             <img
               src="/assets/icons/css.png"
               alt="CSS"
-              class="w-12 h-12 mx-auto"
+              class="w-12 h-12 mx-auto object-contain transition group-hover:scale-110"
             />
             <p class="mt-2 text-xs font-medium">CSS</p>
           </div>
 
           <div
-            class="group bg-lightSurface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
+            class="group bg-light-surface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
           >
             <img
               src="/assets/icons/javascript.png"
               alt="JavaScript"
-              class="w-12 h-12 mx-auto"
+              class="w-12 h-12 mx-auto object-contain transition group-hover:scale-110"
             />
             <p class="mt-2 text-xs font-medium">JavaScript</p>
           </div>
 
           <div
-            class="group bg-lightSurface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
+            class="group bg-light-surface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
           >
             <img
               src="/assets/icons/typescript.png"
               alt="TypeScript"
-              class="w-12 h-12 mx-auto"
+              class="w-12 h-12 mx-auto object-contain transition group-hover:scale-110"
             />
             <p class="mt-2 text-xs font-medium">TypeScript</p>
           </div>
 
           <div
-            class="group bg-lightSurface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
+            class="group bg-light-surface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
           >
             <img
               src="/assets/icons/php.png"
               alt="PHP"
-              class="w-12 h-12 mx-auto"
+              class="w-12 h-12 mx-auto object-contain transition group-hover:scale-110"
             />
             <p class="mt-2 text-xs font-medium">PHP</p>
           </div>
@@ -284,69 +284,69 @@
           data-aos-delay="200"
         >
           <div
-            class="group bg-lightSurface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
+            class="group bg-light-surface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
           >
             <img
               src="/assets/icons/nodejs.png"
-              alt="NodeJS"
-              class="w-12 h-12 mx-auto"
+              alt="Node.js"
+              class="w-12 h-12 mx-auto object-contain transition group-hover:scale-110"
             />
-            <p class="mt-2 text-xs font-medium">NodeJS</p>
+            <p class="mt-2 text-xs font-medium">Node.js</p>
           </div>
 
           <div
-            class="group bg-lightSurface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
+            class="group bg-light-surface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
           >
             <img
               src="/assets/icons/express.png"
-              alt="Express"
-              class="w-12 h-12 mx-auto"
+              alt="Express.js"
+              class="w-12 h-12 mx-auto object-contain transition group-hover:scale-110"
             />
-            <p class="mt-2 text-xs font-medium">Express</p>
+            <p class="mt-2 text-xs font-medium">Express.js</p>
           </div>
 
           <div
-            class="group bg-lightSurface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
+            class="group bg-light-surface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
           >
             <img
               src="/assets/icons/react.png"
               alt="React"
-              class="w-12 h-12 mx-auto"
+              class="w-12 h-12 mx-auto object-contain transition group-hover:scale-110"
             />
-            <p class="mt-2 text-xs font-medium">ReactJS</p>
+            <p class="mt-2 text-xs font-medium">React</p>
           </div>
 
           <div
-            class="group bg-lightSurface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
+            class="group bg-light-surface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
           >
             <img
               src="/assets/icons/next.png"
-              alt="NextJS"
-              class="w-12 h-12 mx-auto"
+              alt="Next.js"
+              class="w-12 h-12 mx-auto object-contain transition group-hover:scale-110"
             />
-            <p class="mt-2 text-xs font-medium">NextJS</p>
+            <p class="mt-2 text-xs font-medium">Next.js</p>
           </div>
 
           <div
-            class="group bg-lightSurface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
+            class="group bg-light-surface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
           >
             <img
               src="/assets/icons/bootstrap.png"
               alt="Bootstrap"
-              class="w-12 h-12 mx-auto"
+              class="w-12 h-12 mx-auto object-contain transition group-hover:scale-110"
             />
             <p class="mt-2 text-xs font-medium">Bootstrap</p>
           </div>
 
           <div
-            class="group bg-lightSurface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
+            class="group bg-light-surface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
           >
             <img
               src="/assets/icons/tailwind.png"
-              alt="Tailwind"
-              class="w-12 h-12 mx-auto"
+              alt="Tailwind CSS"
+              class="w-12 h-12 mx-auto object-contain transition group-hover:scale-110"
             />
-            <p class="mt-2 text-xs font-medium">Tailwind</p>
+            <p class="mt-2 text-xs font-medium">Tailwind CSS</p>
           </div>
         </div>
 
@@ -364,55 +364,55 @@
           data-aos-delay="250"
         >
           <div
-            class="group bg-lightSurface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
+            class="group bg-light-surface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
           >
             <img
               src="/assets/icons/figma.png"
               alt="Figma"
-              class="w-12 h-12 mx-auto"
+              class="w-12 h-12 mx-auto object-contain transition group-hover:scale-110"
             />
             <p class="mt-2 text-xs font-medium">Figma</p>
           </div>
 
           <div
-            class="group bg-lightSurface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
+            class="group bg-light-surface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
           >
             <img
               src="/assets/icons/postman.png"
               alt="Postman"
-              class="w-12 h-12 mx-auto"
+              class="w-12 h-12 mx-auto object-contain transition group-hover:scale-110"
             />
             <p class="mt-2 text-xs font-medium">Postman</p>
           </div>
 
           <div
-            class="group bg-lightSurface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
+            class="group bg-light-surface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
           >
             <img
               src="/assets/icons/vscode.png"
-              alt="VSCode"
-              class="w-12 h-12 mx-auto"
+              alt="VS Code"
+              class="w-12 h-12 mx-auto object-contain transition group-hover:scale-110"
             />
-            <p class="mt-2 text-xs font-medium">VSCode</p>
+            <p class="mt-2 text-xs font-medium">VS Code</p>
           </div>
           <div
-            class="group bg-lightSurface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
+            class="group bg-light-surface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
           >
             <img
               src="/assets/icons/vercel.png"
               alt="Vercel"
-              class="w-12 h-12 mx-auto"
+              class="w-12 h-12 mx-auto object-contain transition group-hover:scale-110"
             />
             <p class="mt-2 text-xs font-medium">Vercel</p>
           </div>
 
           <div
-            class="group bg-lightSurface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
+            class="group bg-light-surface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
           >
             <img
               src="/assets/icons/netlify.png"
               alt="Netlify"
-              class="w-12 h-12 mx-auto"
+              class="w-12 h-12 mx-auto object-contain transition group-hover:scale-110"
             />
             <p class="mt-2 text-xs font-medium">Netlify</p>
           </div>
@@ -432,34 +432,34 @@
           data-aos-delay="250"
         >
           <div
-            class="group bg-lightSurface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
+            class="group bg-light-surface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
           >
             <img
               src="/assets/icons/mysql.png"
               alt="MySQL"
-              class="w-12 h-12 mx-auto"
+              class="w-12 h-12 mx-auto object-contain transition group-hover:scale-110"
             />
             <p class="mt-2 text-xs font-medium">MySQL</p>
           </div>
 
           <div
-            class="group bg-lightSurface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
+            class="group bg-light-surface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
           >
             <img
               src="/assets/icons/mongodb.png"
               alt="MongoDB"
-              class="w-12 h-12 mx-auto"
+              class="w-12 h-12 mx-auto object-contain transition group-hover:scale-110"
             />
             <p class="mt-2 text-xs font-medium">MongoDB</p>
           </div>
 
           <div
-            class="group bg-lightSurface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
+            class="group bg-light-surface dark:bg-surface p-3 rounded-xl text-center border border-slate-200 dark:border-slate-800 hover:border-brand transition"
           >
             <img
               src="/assets/icons/postgres.png"
               alt="PostgreSQL"
-              class="w-12 h-12 mx-auto"
+              class="w-12 h-12 mx-auto object-contain transition group-hover:scale-110"
             />
             <p class="mt-2 text-xs font-medium">PostgreSQL</p>
           </div>
@@ -467,7 +467,7 @@
       </section>
 
       <footer
-        class="bg-lightSurface dark:bg-surface px-6 md:px-12 py-6 border-t border-slate-200 dark:border-slate-800 text-sm text-slate-500 dark:text-slate-400"
+        class="bg-light-surface dark:bg-surface px-6 md:px-12 py-6 border-t border-slate-200 dark:border-slate-800 text-sm text-slate-500 dark:text-slate-400"
       >
         Made with ❤️ by I Gede Arya Danny Pratama
       </footer>
