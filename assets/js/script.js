@@ -24,8 +24,8 @@ navLinks.forEach((link) => link.addEventListener("click", closeSidebar));
 // Theme Toggle
 // =======================
 const html = document.documentElement;
-const themeToggle = document.getElementById("themeToggle");
-const themeToggleMobile = document.getElementById("themeToggleMobile");
+const themeToggle = document.getElementById("theme-toggle");
+const themeToggleMobile = document.getElementById("theme-toggle-mobile");
 
 function updateThemeLabel() {
   const isDark = html.classList.contains("dark");
