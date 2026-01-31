@@ -14,8 +14,8 @@ This website is my personal branding space and online portfolio, built to showca
 
 ## Live Website
 
-- 🔗 <https://www.igdarya.com/>
-- 🔗 <https://igdarya.netlify.app/>
+- 🔗 <https://igdarya.com>
+- 🔗 <https://igdarya.netlify.app>
 
 ## Tech Stack
 
